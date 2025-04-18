@@ -116,7 +116,7 @@ Look for:
 - TokenSale or AdminCap IDs (after launching sale)
 
 ### 🌐 From Explorer
-1. Go to [Sui Explorer](https://suiexplorer.com/) or [Suiscan](https://suiscan.xyz/devnet/home)
+1. Go to [Sui Explorer](https://suiexplorer.com/) or [Suiscan](https://suiscan.xyz/testnet/home)
 2. Set network to **Testnet**
 3. Paste your `Transaction Digest` (from publish) in the search bar
 4. View:
@@ -134,14 +134,14 @@ TreasuryCap: 0xdba9692...
 
 ## 🚀 Launch Sale (Suiscan Web UI)
 
-### 🧩 Connect Wallet to [Suiscan Devnet](https://suiscan.xyz/devnet/home)
+### 🧩 Connect Wallet to [Suiscan Testnet]([https://suiscan.xyz/testnet/home)
 1. Open Chrome Wallet → "Add Account" → "Import Passphrase"
 2. Paste your **Recovery Phrase**
 3. Confirm with your wallet password
 4. In `Settings → Network`, choose **Testnet**
 
 ### 📦 Launch Sale
-1. Paste your published `Package ID` into search
+1. Paste published EggX package ID `0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8` into search or click [here](https://suiscan.xyz/testnet/object/0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8/contracts) to open
 2. Go to `Contracts` tab → Select `dashboard_utils`
 3. Select `dashboard_launch_sale`
 
@@ -183,7 +183,7 @@ Find your:
 
 To start your Token Sale from the Explorer:
 
-1. Open [Suiscan Devnet](https://suiscan.xyz/devnet/home) and connect your wallet.
+1. Open [Suiscan Devnet](https://suiscan.xyz/testnet/home) and connect your wallet.
 2. Search for your **Package ID**, go to the `sale_utils` contract.
 3. Select the `advance_sale` function.
 4. Provide:
