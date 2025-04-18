@@ -5,7 +5,7 @@ edition = "2024.beta"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
-eggx_test = { git = "https://github.com/petushka1/eggx.git", subdir = "move", rev = "testnet" }
+eggx_test = { git = "https://github.com/petushka1/eggx.git", subdir = "move", rev = "develop" }
 
 [addresses]
 user_coin = "0x0"
