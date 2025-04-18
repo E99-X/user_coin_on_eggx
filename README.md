@@ -149,7 +149,7 @@ TreasuryCap: 0xdba9692...
 | Field            | Description                                           | Example                       |
 |------------------|-------------------------------------------------------|-------------------------------|
 | `Type`           | Your CoinType                                         | `0x...::usercoin::USERCOIN`   |
-| `Hard_cap`       | Max supply in fixed-point format                      | `120000000`                   |
+| `Hard_cap`       | Max supply                                            | `120000000`                   |
 | `Reserve_percentage` | Reserved for project team or treasury            | `25`                          |
 | `Base_price`     | Price per token (fixed-point, 0.1 = `100000000`)      | `100000000`                   |
 | `Number_of_stages` | How many stages                                     | `4`                           |
