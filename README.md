@@ -226,8 +226,13 @@ sui client split-coin --coin-id <your_sui_coin_id> --amounts <amount_in_mist> --
 ```
 
 ### 👉 Step 2: Buy Tokens (CLI)
+1. `TokenSale ID`
+2. `Amount` – number of tokens to buy, in fixed-point format (e.g. 100_000_000_000 for 100 tokens)
+3. `SUI Coin ID` – this is your payment coin
+4. `Clock` – always 0x6
+6. `Type Argument` – your custom token type (e.g. 0x...::usercoin::USERCOIN)
 ```bash
-sui client call --package 0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8 --module sale_utils --function buy_tokens --args <token_sale_id> <your_sui_coin_id> 0x6 --type-args <your_coin_type> --gas-budget 100000000
+sui client call --package 0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8 --module sale_utils --function buy_tokens --args <token_sale_id> <amount_in_fixed_point> <your_sui_coin_id> 0x6 --type-args <your_coin_type> --gas-budget 100000000
 ```
 
 📌 `amount` is embedded into the coin you pay with (not passed separately).
