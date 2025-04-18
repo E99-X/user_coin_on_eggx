@@ -164,7 +164,7 @@ TreasuryCap: 0xdba9692...
 ## ⚙️ Launch Sale via CLI
 
 ```bash
-sui client call --package 0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8 --module dashboard_utils --function dashboard_launch_sale --args <your_token_type> <hard_cap> <reserve_percentage> <price> <number_of_stages> <stage_duration> <pricing_mode> <pricing_param> <final_mode> <treasury_cap_id> --gas-budget 100000000
+sui client call --package 0x6a557a566464c478d48c1c5b05f3cf96073dbb5d004a10c5f1c776d48b1c32b8 --module dashboard_utils --function dashboard_launch_sale --args <hard_cap> <reserve_percentage> <price> <number_of_stages> <stage_duration> <pricing_mode> <pricing_param> <final_mode> <treasury_cap_id> --gas-budget 100000000 --type-args <your_token_type>
 ```
 
 After launch, run:
