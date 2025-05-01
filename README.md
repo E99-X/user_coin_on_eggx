@@ -141,7 +141,7 @@ TreasuryCap: 0xdba9692...
 4. In `Settings → Network`, choose **Testnet**
 
 ### 📦 Launch Sale
-1. Paste published EggX package ID `0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37` into search or click [here](https://suiscan.xyz/testnet/object/0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37/contracts) to open
+1. Paste published EggX package ID `0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3` into search or click [here](https://suiscan.xyz/testnet/object/0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3/contracts) to open
 2. Go to `Contracts` tab → Select `dashboard_utils`
 3. Select `dashboard_launch_sale`
 
@@ -164,7 +164,7 @@ TreasuryCap: 0xdba9692...
 ## ⚙️ Launch Sale via CLI
 
 ```bash
-sui client call --package 0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37 --module dashboard_utils --function dashboard_launch_sale --args <hard_cap> <reserve_percentage> <price> <number_of_stages> <stage_duration> <pricing_mode> <pricing_param> <final_mode> <treasury_cap_id> --gas-budget 100000000 --type-args <your_token_type>
+sui client call --package 0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3 --module dashboard_utils --function dashboard_launch_sale --args <hard_cap> <reserve_percentage> <price> <number_of_stages> <stage_duration> <pricing_mode> <pricing_param> <final_mode> <treasury_cap_id> --gas-budget 100000000 --type-args <your_token_type>
 ```
 
 After launch, run:
@@ -198,7 +198,7 @@ This initializes your sale, splits the supply, and starts Stage 1 automatically.
 ### ⚙️ Advance Sale via CLI
 
 ```bash
-sui client call --package 0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37 --module sale_utils --function advance_sale --args <token_sale_id> <admin_cap_id> 0x6 --type-args <your_token_type> --gas-budget 100000000
+sui client call --package 0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3 --module sale_utils --function advance_sale --args <token_sale_id> <admin_cap_id> 0x6 --type-args <your_token_type> --gas-budget 100000000
 ```
 
 🔀 `0x6` is the shared Sui Clock ID used for time-based logic.
@@ -232,7 +232,7 @@ sui client split-coin --coin-id <your_sui_coin_id> --amounts <amount_in_mist> --
 4. `Clock` – always 0x6
 6. `Type Argument` – your custom token type (e.g. 0x...::usercoin::USERCOIN)
 ```bash
-sui client call --package 0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37 --module sale_utils --function buy_tokens --args <token_sale_id> <amount_in_fixed_point> <your_sui_coin_id> 0x6 --type-args <your_coin_type> --gas-budget 100000000
+sui client call --package 0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3 --module sale_utils --function buy_tokens --args <token_sale_id> <amount_in_fixed_point> <your_sui_coin_id> 0x6 --type-args <your_coin_type> --gas-budget 100000000
 ```
 
 📌 `amount` is embedded into the coin you pay with (not passed separately).
@@ -284,7 +284,7 @@ eggx_test = { git = "https://github.com/petushka1/eggx.git", subdir = "move", re
 
 [addresses]
 user_coin = "0x0"
-eggx_test = "0xfe16a74954a0629e1fe19c5fe8efe626f3ce1e6665d4d919f06abbe8a68b8d37"
+eggx_test = "0x3a474265fc5094791e18d4d54d07244a92634c6b4781120f480f0de83863ccc3"
 ```
 
 ---

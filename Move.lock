@@ -2,10 +2,11 @@
 
 [move]
 version = 3
-manifest_digest = "EBAF3B690C9F74A65B9ACF56B8ED5897CB27F733A803E8DEDDA1E35FD74248EF"
-deps_digest = "3C4103934B1E040BB6B23F1D610B4EF9F2F1166A50A104EADCF77467C004C600"
+manifest_digest = "EC090834F29770866FCDE5B023AB56C068D1D2DE9F74B3A2FB49610070BA446D"
+deps_digest = "060AD7E57DFB13104F21BE5F5C3759D03F0553FC3229247D9A7A6B45F50D03A3"
 dependencies = [
   { id = "Sui", name = "Sui" },
+  { id = "autopilot", name = "autopilot" },
   { id = "eggx_test", name = "eggx_test" },
 ]
 
@@ -22,6 +23,15 @@ dependencies = [
 ]
 
 [[move.package]]
+id = "autopilot"
+source = { git = "https://github.com/petushka1/eggx.git", rev = "develop", subdir = "autopilot" }
+
+dependencies = [
+  { id = "Sui", name = "Sui" },
+  { id = "eggx_test", name = "eggx_test" },
+]
+
+[[move.package]]
 id = "eggx_test"
 source = { git = "https://github.com/petushka1/eggx.git", rev = "develop", subdir = "move" }
 
@@ -33,3 +43,11 @@ dependencies = [
 compiler-version = "1.48.0"
 edition = "2024.beta"
 flavor = "sui"
+
+[env]
+
+[env.testnet]
+chain-id = "4c78adac"
+original-published-id = "0xe857dc98547744e9def8b0268ed209d7ebc05627c8e269caca62ee57f3db391c"
+latest-published-id = "0xe857dc98547744e9def8b0268ed209d7ebc05627c8e269caca62ee57f3db391c"
+published-version = "1"
