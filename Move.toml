@@ -11,5 +11,6 @@ autopilot = { git = "https://github.com/petushka1/eggx.git", subdir = "autopilot
 
 [addresses]
 user_coin = "0x0"
-eggx_test = "0x709548026893c80a85cc128d6c6f9cd5090874a21aed43f23858745c843a2673"
-autopilot = "0xd8a634b16217d8f2b8538c91b6e4c07b93453706de68946ded0faa0088a1ea44"
+eggx_test = "0x34218f8b8ed94c0c89bdf312188a612a9f9b2b4db6c70ff9c85e1ff52ea973c0"
+autopilot = "0xd884f7edb4b8b2fcacccc256673901d095873471bc95c1b1e9f9f0748ce28af2"
+
