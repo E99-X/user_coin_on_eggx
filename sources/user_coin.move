@@ -1,12 +1,12 @@
 // user package
-module user_coin::usercoin {
+module user_coin::usercoinew2 {
     use eggx_test::token_utils::create_token;
 
-    public struct USERCOIN has drop {}
+    public struct USERCOINEW2 has drop {}
 
-    fun init(witness: USERCOIN, ctx: &mut TxContext) {
+    fun init(witness: USERCOINEW2, ctx: &mut TxContext) {
 
-        let treasury_cap = create_token<USERCOIN>(
+        let treasury_cap = create_token<USERCOINEW2>(
             witness,
             9,
             b"User Token",
