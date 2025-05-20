@@ -2,7 +2,7 @@
 
 [move]
 version = 3
-manifest_digest = "73969E8D07E37B161695706BC748EA0F8487FAD85AFE1269298F403F104968F5"
+manifest_digest = "2ECEB13B5FD8CFEE10D744B3C1C4D170C24B0088BF5D0B6FD1B8C330D323CA00"
 deps_digest = "060AD7E57DFB13104F21BE5F5C3759D03F0553FC3229247D9A7A6B45F50D03A3"
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -24,7 +24,7 @@ dependencies = [
 
 [[move.package]]
 id = "autopilot"
-source = { git = "https://github.com/petushka1/eggx.git", rev = "develop", subdir = "autopilot" }
+source = { git = "https://github.com/E99-X/eggx_protocol.git", rev = "develop", subdir = "autopilot" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -33,7 +33,7 @@ dependencies = [
 
 [[move.package]]
 id = "eggx_test"
-source = { git = "https://github.com/petushka1/eggx.git", rev = "develop", subdir = "move" }
+source = { git = "https://github.com/E99-X/eggx_protocol.git", rev = "develop", subdir = "eggx_test" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -48,6 +48,6 @@ flavor = "sui"
 
 [env.testnet]
 chain-id = "4c78adac"
-original-published-id = "0xa897e88d1f215ce96b0bb0b6c98723169757876892dbbab1e4688f2ec31f1e86"
-latest-published-id = "0xa897e88d1f215ce96b0bb0b6c98723169757876892dbbab1e4688f2ec31f1e86"
+original-published-id = "0xa86b9f811ae34f55fb2d8e9becc9477ba2f22861ac014e11e831e0fbd88c2129"
+latest-published-id = "0xa86b9f811ae34f55fb2d8e9becc9477ba2f22861ac014e11e831e0fbd88c2129"
 published-version = "1"

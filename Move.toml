@@ -5,12 +5,11 @@ edition = "2024.beta"
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
-eggx_test = { git = "https://github.com/petushka1/eggx.git", subdir = "move", rev = "develop" }
-autopilot = { git = "https://github.com/petushka1/eggx.git", subdir = "autopilot", rev = "develop" }
+eggx_test = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "eggx_test", rev = "develop" }
+autopilot = { git = "https://github.com/E99-X/eggx_protocol.git", subdir = "autopilot", rev = "develop" }
 
 
 [addresses]
 user_coin = "0x0"
-eggx_test = "0x34218f8b8ed94c0c89bdf312188a612a9f9b2b4db6c70ff9c85e1ff52ea973c0"
-autopilot = "0xd884f7edb4b8b2fcacccc256673901d095873471bc95c1b1e9f9f0748ce28af2"
-
+autopilot = "0x8d5a779f3763fe9c1d8a9e2871e103190cf14a7c503fc80dbf00712e8b54e459"
+eggx_test = "0x023177c42f5ff2f00de27af9132c17143446df41148c4fd132a2f7569b8fffa0"
