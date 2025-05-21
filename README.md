@@ -190,7 +190,7 @@ sui client call --package 0x023177c42f5ff2f00de27af9132c17143446df41148c4fd132a2
 
 ## 3️⃣ Start and Manage Sale via UI
 
-Once you've launched your first sale and found your **`TokenSale ID`** in dygest You can start testing Egg-X Widget as a creator.
+Once you've launched your first sale and found your **`TokenSale ID`** in digest You can start testing Egg-X Widget as a creator.
 Go to [EggX Demo Playground](https://e99x.com/), connect your wallet and follow intuitive UI
 
 - Start Sale
