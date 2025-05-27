@@ -72,46 +72,6 @@ To render multiple widgets on the same page, just add more containers (with uniq
 </script>
 ```
 
-## In a React app
-
-If you’re running the demo locally on localhost:3001, you can load the widget script dynamically and render it into a React component. For example:
-
-```bash
-import React, { useEffect, useRef } from 'react';
-
-const WIDGET_SRC = 'http://localhost:3001/widget.js';
-
-export default function PreviewWidget({ saleId, avatarUrl, customColors }) {
-  const containerRef = useRef(null);
-
-  // load the widget script once
-  useEffect(() => {
-    if (typeof window.TokenSaleWidget !== 'function') {
-      const s = document.createElement('script');
-      s.src = WIDGET_SRC;
-      s.async = true;
-      s.onload = renderWidget;
-      document.body.appendChild(s);
-    } else {
-      renderWidget();
-    }
-
-    function renderWidget() {
-      if (!window.TokenSaleWidget || !containerRef.current) return;
-      containerRef.current.innerHTML = '';
-      window.TokenSaleWidget({
-        containerId: containerRef.current.id,
-        customColors,
-        avatarUrl,
-        saleId,
-      });
-    }
-  }, [saleId, avatarUrl, customColors]);
-
-  return <div id="previewWidget-1" ref={containerRef} />;
-}
-```
-
 ---
 
 ## Behavior
