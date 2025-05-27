@@ -122,6 +122,12 @@ export default function PreviewWidget({ saleId, avatarUrl, customColors }) {
 - Sale config like tokenType and AdminCapId are auto-injected from chain state.
 - Only UI-level config needed: avatar and colors.
 
+### Autopilot Module (FaaS)
+
+> Automate your token sale stages without signing manual transactions on specified triggers — EggX’s “Features as a Service” approach.
+
+EggX Autopilot is a plug-and-play FaaS module—simply wire in a 10-minute cron job or serverless scheduler (e.g. Firebase Functions) and let your sale run itself on Sui.
+
 ## 📷 Screenshots
 
 <img src="https://i.imgur.com/9NDXTYM.jpeg" width="300" style="vertical-align: top;"/> <img src="https://i.imgur.com/T0TgLtx.jpeg" width="300" style="vertical-align: top;"/>
